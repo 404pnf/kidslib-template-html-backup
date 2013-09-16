@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>少儿双语资源库</title>
+<link  href="styles/common.css" rel="stylesheet" type="text/css" />
+<link  href="styles/bookshelf.css" rel="stylesheet" type="text/css" />
+<script src="js/hiddenShow.js" type="text/javascript"></script> 
+<!--[if lte IE 6]><script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>    <script type="text/javascript">        DD_belatedPNG.fix('.pngFix');</script><![endif]-->
+
+<script type="text/javascript">
+
+//鼠标移入显示大图片
+
+function big_show(){ 
+var ei = document.getElementById("big_image");
+ei.style.display = "block";
+var bi= document.getElementById("small_image");
+var s_src=bi.src;
+var k = s_src.lastIndexOf('/');
+var book_name =s_src.substr(k+1,s_src.length);
+ei.style.backgroundImage = 'url(images/big_book/'+book_name+')';
+}
+//鼠标移出隐藏大图片
+function big_hidden(){
+var ei = document.getElementById("big_image");
+ei.style.display = "none";
+}
+
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<!-- 	顶部开始	 -->
+	<div class="top pngFix">
+        <div class="top pngFix">
+        <div class="top_login">
+        <div class=" fright user_name"  onMouseMove="userShow();" onMouseOut="userHidden();">
+        <a href="#" class="fleft font_mrosoftYHB"><img src="images/user-img.jpg">米 亚</a>
+        <!--下拉菜单-->
+        <ul class="user_nav fright fclear"  id="user_name">
+        <li><a href="#">个人资料</a></li>
+        <li><a href="#">我的收藏</a></li>
+        <li><a href="#">退出</a></li>
+        </ul>
+        </div>
+        <!--下拉结束-->
+        
+    </div>
+        <div class="title"><div class="title_left"><a href="#" class="back font_mrosoftYHB fleft">返回</a><a href="#" class="home font_mrosoftYHB fleft">主页</a></div><img src="images/title.png"  class="title eshow pngFix"/></div>
+    </div>
+        <div class="title"><img src="images/title.png"  class="title eshow pngFix"/></div>
+    </div>
+<!-- 	顶部结束	 -->
+<!-- 	书架开始	 -->
+<div class="left_classitfy left_bookshelf fleft">
+	<ul>
+    <li><a href="#" class="left_classitfy_nav_s">成长故事书</a></li>
+    <li><a href="#">布奇音乐屋</a></li>
+    <li><a href="#">布奇动画片</a></li>
+    <li><a href="#">亲子游乐园</a></li>
+    <li><a href="#">英语小剧场</a></li>
+    </ul>
+    <img src="images/bookshelf_left.png" class="left_classitfy_img" />
+</div>
+<div class="bookshelf_main_bg fleft">
+	<!--top list -->
+    <div class="top_bookshelf">
+    <ul>
+    <li><a href="#" class="top_nav_s">早教乐乐园</a></li>
+    <li><a href="#">欢乐电子书</a></li>
+    <li><a href="#">英语小课堂</a></li>
+    </ul>
+    </div>
+    <!--top list end-->
+    <!--book list-->
+    <ul class="book_list">
+    <li  onMouseMove="big_show();" onMouseOut="big_hidden();"><img src="images/book_01.png"  id="small_image" /><span>小王子</span><div id="big_image" class="big_image"><a href="#" target="_blank">小王子小王子小王子小王子小王子</a></div></li>
+   <li><img src="images/book_02.png" /><span>小王子</span></li>
+   <li><img src="images/book_03.png" /><span>小王子</span></li>
+   <li><img src="images/book_04.png" /><span>小王子</span></li>
+   <li><img src="images/book_05.png" /><span>小王子</span></li>
+   <li><img src="images/book_06.png" /><span>小王子</span></li>
+   <li><img src="images/book_07.png" /><span>小王子</span></li>
+   <li><img src="images/book_08.png" /></li>
+   <li><img src="images/book_09.png" /></li>
+   <li><img src="images/book_10.png" /></li>
+   <li><img src="images/book_11.png" /></li>
+   <li><img src="images/book_12.png" /></li>
+   <li><img src="images/book_13.png" /></li>
+   <li><img src="images/book_14.png" /></li>
+   <li><img src="images/book_15.png" /></li>
+   <li><img src="images/book_16.png" /></li>
+   <li><img src="images/book_17.png" /></li>
+   <li><img src="images/book_18.png" /></li>
+    </ul>
+    <!--book list end-->
+    <div class="page fclear"></div>
+    </div>
+
+<div class="classify_name">10-12岁</div>
+<!-- 	书架结束	 -->
+	<div class="bottom"><div class="fltrp_logo fright"></div></div>
+</div>
+</body>
+</html>
